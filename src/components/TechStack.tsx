@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Cpu, Eye, Wind, Layers, Compass, Plus, Activity } from "lucide-react";
 import { TecnologiaLuxo } from "../types";
+import techImage from "../assets/images/dental_tech_art_1781525548061.jpg";
 
 export default function TechStack() {
   const [selectedTech, setSelectedTech] = useState<string>("scanner");
@@ -52,8 +53,6 @@ export default function TechStack() {
       default: return <Activity className="w-5 h-5 text-gold-500" />;
     }
   };
-
-  const techImage = "/src/assets/images/dental_tech_art_1781525548061.jpg";
 
   return (
     <section id="tech" className="py-24 bg-sage-100/60 border-y border-sage-200/50 relative">

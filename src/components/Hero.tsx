@@ -1,13 +1,12 @@
 import React from "react";
 import { Sparkles, ArrowRight, ShieldCheck, Heart } from "lucide-react";
+import heroImage from "../assets/images/zen_clinic_interior_1781525518737.jpg";
 
 interface HeroProps {
   onNavigate: (section: string) => void;
 }
 
 export default function Hero({ onNavigate }: HeroProps) {
-  // Our beautifully generated asset representing Clinical Zen space
-  const heroImage = "/src/assets/images/zen_clinic_interior_1781525518737.jpg";
 
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center pt-28 pb-16 overflow-hidden bg-sage-50">
