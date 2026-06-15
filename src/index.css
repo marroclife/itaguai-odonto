@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@200;300;400;500;600;700&family=JetBrains+Mono:wght@200;300;400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-sage-50: #FAF9F6;
+  --color-sage-100: #F2F1ED;
+  --color-sage-200: #E5E2DB;
+  --color-sage-300: #B5B2AB;
+  --color-sage-600: #8A9A8E;
+  --color-sage-800: #5C5C5C;
+  --color-sage-950: #1A1A1A;
+  
+  --color-gold-50: #FAF9F6;
+  --color-gold-100: #F2EFE8;
+  --color-gold-200: #E5DFC9;
+  --color-gold-500: #C5A059;
+  --color-gold-600: #B28F4D;
+  --color-gold-700: #99783D;
+  
+  --color-luxury-navy: #1A1A1A;
+  --color-luxury-gold: #C5A059;
+  
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Base resets & custom typography scroll behaviors */
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-sage-50);
+  color: var(--color-sage-950);
+  overflow-x: hidden;
+}
+
+/* Subtle background slow ambient moving */
+@keyframes floatUp {
+  0% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-10px) scale(1.02); }
+  100% { transform: translateY(0) scale(1); }
+}
+
+.ambient-float {
+  animation: floatUp 8s ease-in-out infinite;
+}
+
+/* Custom scroll bar modern styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-sage-50);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-sage-300);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold-500);
+}

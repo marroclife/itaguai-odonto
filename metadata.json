@@ -1,0 +1,6 @@
+{
+  "name": "Odontologia de Ultra-Luxo",
+  "description": "Website conceitual de odontologia de ultra-luxo com estética Clinical Zen, tecnologia avançada e diagnóstico estético assistido por IA.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
