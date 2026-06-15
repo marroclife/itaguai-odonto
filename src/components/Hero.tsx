@@ -1,6 +1,6 @@
 import React from "react";
 import { Sparkles, ArrowRight, ShieldCheck, Heart } from "lucide-react";
-import heroImage from "../assets/images/zen_clinic_interior_1781525518737.jpg";
+import heroImage from "../assets/images/hero_reception_itaguai_dental.png";
 
 interface HeroProps {
   onNavigate: (section: string) => void;
